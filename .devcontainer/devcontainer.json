@@ -1,0 +1,26 @@
+{
+  "name": "learn-you-a-haskell-for-great-good",
+  "dockerComposeFile": [
+    "../compose.yaml"
+  ],
+  "service": "app",
+  "workspaceFolder": "/app",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "dotfiles.repository": "msasaki666/dotfiles",
+        "dotfiles.targetPath": "~/dotfiles",
+        "dotfiles.installCommand": "install.sh"
+      },
+      "extensions": [
+        "editorconfig.editorconfig",
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "donjayamanne.githistory",
+        "mosapride.zenkaku",
+        "haskell.haskell"
+      ]
+    }
+  }
+}
